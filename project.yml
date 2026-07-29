@@ -11,6 +11,10 @@ settings:
   base:
     SWIFT_VERSION: "5.9"
     CODE_SIGN_STYLE: Automatic
+    # Set here rather than in Xcode's Signing tab, which lives only in the generated
+    # .xcodeproj and is wiped by the next `xcodegen generate`. Applies to both targets;
+    # the test bundle needs signing too when tests run on a physical device.
+    DEVELOPMENT_TEAM: YN9P8L7LG2
     ENABLE_USER_SCRIPT_SANDBOXING: YES
     SWIFT_EMIT_LOC_STRINGS: YES
 
