@@ -51,7 +51,7 @@ struct TodayView: View {
                         ContentUnavailableView(
                             "Nothing logged yet",
                             systemImage: "fork.knife",
-                            description: Text("Use the camera button to photograph a meal, or the pencil to speak or type one.")
+                            description: Text("Use the camera button to photograph a meal, or the pencil to type one.")
                         )
                     } else {
                         ForEach(todaysEntries) { entry in
@@ -67,7 +67,7 @@ struct TodayView: View {
                     Button {
                         showingManual = true
                     } label: {
-                        Label("Speak or type a meal", systemImage: "square.and.pencil")
+                        Label("Add by text", systemImage: "square.and.pencil")
                     }
                 }
                 ToolbarItem(placement: .topBarTrailing) {

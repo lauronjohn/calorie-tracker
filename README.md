@@ -2,15 +2,13 @@
 
 John's calorie tracker — a minimal iOS app for logging meals, with AI photo analysis.
 
-Photograph a meal — or speak or type what you ate — and it comes back broken into
-items with estimated calories and macros. You review and edit the estimate, then it's
-logged against your daily goal.
+Photograph a meal (or type what you ate) and it comes back broken into items with
+estimated calories and macros. You review and edit the estimate, then it's logged
+against your daily goal.
 
 - **iOS 17+**, SwiftUI, SwiftData
 - **Two AI providers, switchable in Settings** — Claude, or any OpenAI-compatible
   endpoint (Qwen, OpenRouter, OpenAI, a local server)
-- **Voice entry** via Apple's on-device speech recognition — free, works offline, and
-  no audio is sent to the AI provider
 - **Your API key stays on your device**, in the iOS Keychain. No backend.
 
 ## Setup
