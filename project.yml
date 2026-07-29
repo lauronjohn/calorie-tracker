@@ -35,6 +35,10 @@ targets:
           Used to photograph your meals so they can be analysed for calories and macros.
         INFOPLIST_KEY_NSPhotoLibraryUsageDescription: >-
           Used to pick an existing meal photo to analyse for calories and macros.
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: >-
+          Used to record you describing a meal so it can be transcribed instead of typed.
+        INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: >-
+          Used to turn what you say about a meal into text for analysis.
 
   CalorieTrackerTests:
     type: bundle.unit-test
