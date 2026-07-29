@@ -47,7 +47,9 @@ struct CalorieRingView: View {
                      ? "\(Int(remaining.rounded())) left"
                      : "\(Int(abs(remaining).rounded())) over")
                     .font(.caption)
-                    .foregroundStyle(remaining >= 0 ? .secondary : .red)
+                    // Both branches must be the same type: `.secondary` alone infers
+                    // HierarchicalShapeStyle, which `.red` is not.
+                    .foregroundStyle(remaining >= 0 ? Color.secondary : Color.red)
                     .padding(.top, 2)
             }
         }
